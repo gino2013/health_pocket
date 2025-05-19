@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllFuncTitleView" customModule="phi_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="iconImageView" destination="7Sb-IV-zu2" id="AeB-ZW-tyd"/>
+                <outlet property="titleLabel" destination="JjQ-9b-vxU" id="ivH-vw-V8V"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWc-FR-ifz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定與管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-9b-vxU">
+                            <rect key="frame" x="40" y="16.5" width="80" height="23"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                            <color key="textColor" red="0.20392156862745098" green="0.22352941176470587" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="JjQ-9b-vxU" firstAttribute="centerY" secondItem="RWc-FR-ifz" secondAttribute="centerY" id="0jM-3N-xDq"/>
+                        <constraint firstAttribute="height" constant="56" id="HJ5-2p-Duw"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setup" translatesAutoresizingMaskIntoConstraints="NO" id="7Sb-IV-zu2">
+                    <rect key="frame" x="0.0" y="8" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7Sb-IV-zu2" secondAttribute="height" multiplier="1:1" id="CQF-Kr-6sI"/>
+                        <constraint firstAttribute="height" constant="40" id="XCL-cf-lvn"/>
+                        <constraint firstAttribute="width" secondItem="7Sb-IV-zu2" secondAttribute="height" multiplier="1:1" id="swz-cU-M2W"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7Sb-IV-zu2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="F4w-3o-JPP"/>
+                <constraint firstItem="JjQ-9b-vxU" firstAttribute="leading" secondItem="7Sb-IV-zu2" secondAttribute="trailing" id="Mbo-Ph-HlZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RWc-FR-ifz" secondAttribute="trailing" id="Ujo-Hj-ld2"/>
+                <constraint firstItem="7Sb-IV-zu2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VTT-d1-ax0"/>
+                <constraint firstItem="RWc-FR-ifz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oWS-gQ-g9x"/>
+                <constraint firstItem="RWc-FR-ifz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rVU-HP-d09"/>
+                <constraint firstAttribute="bottom" secondItem="RWc-FR-ifz" secondAttribute="bottom" id="uBj-bL-fPT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.13043478260872" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="setup" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

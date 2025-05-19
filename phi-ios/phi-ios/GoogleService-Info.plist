@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC4P2ld5g1RE5pg_6f0bmo78pGEx17ZpY4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>689738206945</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.cathayholdings.phi-sit</string>
+	<key>PROJECT_ID</key>
+	<string>fm-ohtb-lab</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fm-ohtb-lab.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:689738206945:ios:9a35da3a6b0ca1e32cf1a0</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  phi-ios
+
+  Created by Kenneth on 2024/10/14.
+  
+*/
+
+"hello" = "你好";
+"goodbye" = "再見";
+"home_welcome" = "歡迎來到首頁";
+"home_logout_button" = "登出";
+"settings_language_change" = "更改語言";
+"settings_theme_change" = "更改主題";
+
+// PHI登入
+"login_view_title" = "登入PHI";

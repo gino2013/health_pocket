@@ -1,0 +1,12 @@
+//
+//  Production.xcconfig
+//  phi-ios
+//
+//  Created by Kenneth Wu on 2024/8/15.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+CONF_APP_VERSION_NUMBER = 0.5.5
+CONF_APP_BUILD_NUMBER = 1

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController restorationIdentifier="AuthSuccessAlertVC" modalPresentationStyle="overFullScreen" id="w1k-WG-NG2" customClass="AuthSuccessAlertVC" customModule="phi_ios" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="fbD-jP-83A">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHs-ps-pEy">
+                        <rect key="frame" x="40" y="279" width="295" height="254"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="u92-QB-fd2">
+                                <rect key="frame" x="24" y="184" width="247" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8H-px-XmC" customClass="UICustomButton" customModule="phi_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="115.66666666666667" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="繼續授權">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="confirmAction:" destination="w1k-WG-NG2" eventType="touchUpInside" id="Pug-tx-2Uz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sp-6t-KOj" customClass="UICustomButton" customModule="phi_ios" customModuleProvider="target">
+                                        <rect key="frame" x="131.66666666666666" y="0.0" width="115.33333333333334" height="46"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="授權管理">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelAction:" destination="w1k-WG-NG2" eventType="touchUpInside" id="rEG-Tr-JgO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="UJv-lt-ejR"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Done" translatesAutoresizingMaskIntoConstraints="NO" id="ol4-7G-gYg">
+                                <rect key="frame" x="123.33333333333333" y="24.000000000000004" width="48.333333333333329" height="48.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ol4-7G-gYg" secondAttribute="height" multiplier="1:1" id="8Ix-SD-few"/>
+                                    <constraint firstAttribute="width" secondItem="ol4-7G-gYg" secondAttribute="height" multiplier="1:1" id="oJP-1Q-K0U"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="授權成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWf-rW-wic">
+                                <rect key="frame" x="111.66666666666666" y="84.333333333333314" width="72" height="25.333333333333329"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="18"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.22352941176470587" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否繼續匯入其它院所醫療資料或前往授權管理?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVq-bq-U2w">
+                                <rect key="frame" x="24" y="121.66666666666669" width="247" height="45"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dWf-rW-wic" firstAttribute="centerX" secondItem="GHs-ps-pEy" secondAttribute="centerX" id="5PL-Io-cm7"/>
+                            <constraint firstItem="u92-QB-fd2" firstAttribute="leading" secondItem="GHs-ps-pEy" secondAttribute="leading" constant="24" id="AWQ-1p-kDP"/>
+                            <constraint firstItem="ol4-7G-gYg" firstAttribute="top" secondItem="GHs-ps-pEy" secondAttribute="top" constant="24" id="Brp-Tc-0ET"/>
+                            <constraint firstItem="wVq-bq-U2w" firstAttribute="leading" secondItem="GHs-ps-pEy" secondAttribute="leading" constant="24" id="EPu-op-cka"/>
+                            <constraint firstAttribute="width" secondItem="GHs-ps-pEy" secondAttribute="height" multiplier="295:254" id="HjB-rq-hBk"/>
+                            <constraint firstAttribute="trailing" secondItem="u92-QB-fd2" secondAttribute="trailing" constant="24" id="eAW-mW-U2b"/>
+                            <constraint firstItem="wVq-bq-U2w" firstAttribute="top" secondItem="dWf-rW-wic" secondAttribute="bottom" constant="12" id="kQY-ZX-gI1"/>
+                            <constraint firstAttribute="bottom" secondItem="u92-QB-fd2" secondAttribute="bottom" constant="24" id="otJ-c9-GOR"/>
+                            <constraint firstAttribute="trailing" secondItem="wVq-bq-U2w" secondAttribute="trailing" constant="24" id="p5W-pd-JDv"/>
+                            <constraint firstItem="ol4-7G-gYg" firstAttribute="centerX" secondItem="GHs-ps-pEy" secondAttribute="centerX" id="sZs-Wg-roS"/>
+                            <constraint firstItem="dWf-rW-wic" firstAttribute="top" secondItem="ol4-7G-gYg" secondAttribute="bottom" constant="12" id="srs-DE-fSZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="ul0-SB-TMj"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="GHs-ps-pEy" firstAttribute="centerX" secondItem="fbD-jP-83A" secondAttribute="centerX" id="hos-Yp-Q48"/>
+                    <constraint firstItem="GHs-ps-pEy" firstAttribute="centerY" secondItem="fbD-jP-83A" secondAttribute="centerY" id="kzf-nW-H6y"/>
+                    <constraint firstItem="GHs-ps-pEy" firstAttribute="width" secondItem="fbD-jP-83A" secondAttribute="width" multiplier="295:375" id="rEL-rF-sV9"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="cancelButton" destination="9Sp-6t-KOj" id="xFL-x1-Fva"/>
+                <outlet property="confirmButton" destination="b8H-px-XmC" id="wFQ-PX-LFC"/>
+                <outlet property="mainLabel" destination="dWf-rW-wic" id="50i-ER-o0c"/>
+                <outlet property="messageLabel" destination="wVq-bq-U2w" id="os9-dm-hE8"/>
+            </connections>
+            <point key="canvasLocation" x="228" y="45.812807881773402"/>
+        </viewController>
+    </objects>
+    <designables>
+        <designable name="9Sp-6t-KOj">
+            <size key="intrinsicContentSize" width="64" height="35"/>
+        </designable>
+        <designable name="b8H-px-XmC">
+            <size key="intrinsicContentSize" width="64" height="35"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Done" width="48.333332061767578" height="48.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

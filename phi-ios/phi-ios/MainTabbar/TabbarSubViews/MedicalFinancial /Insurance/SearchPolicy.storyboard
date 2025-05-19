@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--搜尋保單-->
+        <scene sceneID="cqM-gV-ZDA">
+            <objects>
+                <viewController storyboardIdentifier="SearchPolicyViewController" id="kQu-VA-VgZ" customClass="SearchPolicyViewController" customModule="phi_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9PS-nl-PlZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5k-NW-Z3T" customClass="SearchInputView" customModule="phi_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="68"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="pzw-AP-ymW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="搜尋藥局"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qd-b4-SQc" userLabel="line 0.5">
+                                <rect key="frame" x="0.0" y="125" width="393" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8LL-k5-OBu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YJ-fq-4tV">
+                                <rect key="frame" x="0.0" y="150" width="393" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="顯示：全部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ut2-lD-Xaw">
+                                        <rect key="frame" x="24" y="1" width="65" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="tKV-G6-h8j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                        <color key="textColor" red="0.52156862749999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="CFY-ed-s6d"/>
+                                    <constraint firstItem="Ut2-lD-Xaw" firstAttribute="leading" secondItem="1YJ-fq-4tV" secondAttribute="leading" constant="24" id="GFo-gT-osN"/>
+                                    <constraint firstItem="Ut2-lD-Xaw" firstAttribute="centerY" secondItem="1YJ-fq-4tV" secondAttribute="centerY" id="kl4-4G-XGS"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sef-rL-Z5u">
+                                <rect key="frame" x="0.0" y="178" width="393" height="674"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vWk-SO-f0X">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="674"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListTableViewCell" rowHeight="82" id="cE5-Fx-ake" customClass="ListTableViewCell" customModule="phi_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="393" height="82"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cE5-Fx-ake" id="OTy-8a-Z00">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="82"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xSS-1I-P5V">
+                                                            <rect key="frame" x="24" y="0.0" width="345" height="82"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azr-ke-JR8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="82"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </stackView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSb-3m-anr" userLabel="line 0.5">
+                                                            <rect key="frame" x="0.0" y="81" width="393" height="1"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="Ivj-wb-8LK"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="OSb-3m-anr" secondAttribute="bottom" id="0yg-JQ-cSJ"/>
+                                                        <constraint firstItem="xSS-1I-P5V" firstAttribute="bottom" secondItem="OSb-3m-anr" secondAttribute="bottom" id="3bg-IK-Dlo"/>
+                                                        <constraint firstAttribute="trailing" secondItem="xSS-1I-P5V" secondAttribute="trailing" constant="24" id="Q5e-i1-7PW"/>
+                                                        <constraint firstItem="xSS-1I-P5V" firstAttribute="top" secondItem="OTy-8a-Z00" secondAttribute="top" id="iMv-Yj-kf4"/>
+                                                        <constraint firstItem="xSS-1I-P5V" firstAttribute="leading" secondItem="OTy-8a-Z00" secondAttribute="leading" constant="24" id="lUC-Fs-jh7"/>
+                                                        <constraint firstItem="OSb-3m-anr" firstAttribute="centerX" secondItem="OTy-8a-Z00" secondAttribute="centerX" id="nNT-lS-h5V"/>
+                                                        <constraint firstItem="OSb-3m-anr" firstAttribute="width" secondItem="OTy-8a-Z00" secondAttribute="width" id="xyA-BR-DOD"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="nameLabel" destination="azr-ke-JR8" id="H4K-k1-zbV"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vWk-SO-f0X" firstAttribute="leading" secondItem="Sef-rL-Z5u" secondAttribute="leading" id="93H-aF-lu9"/>
+                                    <constraint firstAttribute="trailing" secondItem="vWk-SO-f0X" secondAttribute="trailing" id="ToN-x9-Ldz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xXl-UU-XWQ"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sef-rL-Z5u" firstAttribute="trailing" secondItem="xXl-UU-XWQ" secondAttribute="trailing" id="6F8-es-utP"/>
+                            <constraint firstItem="2qd-b4-SQc" firstAttribute="width" secondItem="9PS-nl-PlZ" secondAttribute="width" id="C0B-20-MXb"/>
+                            <constraint firstItem="o5k-NW-Z3T" firstAttribute="leading" secondItem="xXl-UU-XWQ" secondAttribute="leading" id="Cc9-QK-1g1"/>
+                            <constraint firstItem="xXl-UU-XWQ" firstAttribute="trailing" secondItem="1YJ-fq-4tV" secondAttribute="trailing" id="F4c-Yh-Aj3"/>
+                            <constraint firstItem="o5k-NW-Z3T" firstAttribute="top" secondItem="xXl-UU-XWQ" secondAttribute="top" id="JSP-El-aPZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Sef-rL-Z5u" secondAttribute="bottom" id="LtS-cn-men"/>
+                            <constraint firstItem="Sef-rL-Z5u" firstAttribute="leading" secondItem="xXl-UU-XWQ" secondAttribute="leading" id="ZHW-r2-Wfj"/>
+                            <constraint firstItem="1YJ-fq-4tV" firstAttribute="top" secondItem="2qd-b4-SQc" secondAttribute="bottom" constant="24" id="ecm-ye-OFO"/>
+                            <constraint firstItem="xXl-UU-XWQ" firstAttribute="trailing" secondItem="o5k-NW-Z3T" secondAttribute="trailing" id="gYL-Li-sRd"/>
+                            <constraint firstItem="1YJ-fq-4tV" firstAttribute="leading" secondItem="xXl-UU-XWQ" secondAttribute="leading" id="kGb-yS-vTJ"/>
+                            <constraint firstItem="2qd-b4-SQc" firstAttribute="centerX" secondItem="9PS-nl-PlZ" secondAttribute="centerX" id="uxm-7p-Pc5"/>
+                            <constraint firstItem="o5k-NW-Z3T" firstAttribute="bottom" secondItem="2qd-b4-SQc" secondAttribute="bottom" constant="1" id="vWt-pw-4ZC"/>
+                            <constraint firstItem="Sef-rL-Z5u" firstAttribute="top" secondItem="1YJ-fq-4tV" secondAttribute="bottom" constant="8" id="z82-ko-B52"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="搜尋保單" id="rks-3b-J7m"/>
+                    <connections>
+                        <outlet property="searchInputView" destination="o5k-NW-Z3T" id="QfB-5O-M8x"/>
+                        <outlet property="searchNoticeLabel" destination="Ut2-lD-Xaw" id="WBp-jh-5Sr"/>
+                        <outlet property="tblView" destination="vWk-SO-f0X" id="pRa-Iu-zOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3R-6k-szU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3858.7786259541981" y="-108.45070422535211"/>
+        </scene>
+    </scenes>
+</document>

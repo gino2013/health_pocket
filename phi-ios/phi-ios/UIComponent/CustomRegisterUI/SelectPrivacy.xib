@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectPrivacy" customModule="phi_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="checkboxImageView" destination="9JM-sP-bR0" id="vyo-6W-Wnu"/>
+                <outlet property="firstLabel" destination="vxq-9c-dfY" id="bbd-db-ZpL"/>
+                <outlet property="secondLabel" destination="orY-5n-hX5" id="FCO-fQ-7LC"/>
+                <outlet property="secondLabelButton" destination="Txf-hz-zr5" id="8FW-87-Umy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nr-t7-p0E">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_default_20x20" translatesAutoresizingMaskIntoConstraints="NO" id="9JM-sP-bR0">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="9JM-sP-bR0" secondAttribute="height" multiplier="1:1" id="8Xw-Pe-6ZF"/>
+                                <constraint firstAttribute="height" constant="40" id="zGD-nG-r41"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="D3A-Hz-tTi">
+                            <rect key="frame" x="40" y="10" width="216.5" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我同意PHI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxq-9c-dfY">
+                                    <rect key="frame" x="0.0" y="0.0" width="65.5" height="20"/>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                                    <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隱私權與個資使用政策" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orY-5n-hX5">
+                                    <rect key="frame" x="66.5" y="0.0" width="150" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="b5g-Ai-qya"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                                    <color key="textColor" red="0.14117647059999999" green="0.42745098040000001" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9JM-sP-bR0" firstAttribute="leading" secondItem="1nr-t7-p0E" secondAttribute="leading" id="86m-FB-l2b"/>
+                        <constraint firstItem="D3A-Hz-tTi" firstAttribute="leading" secondItem="9JM-sP-bR0" secondAttribute="trailing" id="W36-pk-Plq"/>
+                        <constraint firstItem="D3A-Hz-tTi" firstAttribute="centerY" secondItem="9JM-sP-bR0" secondAttribute="centerY" id="a56-Qj-dmq"/>
+                        <constraint firstItem="9JM-sP-bR0" firstAttribute="centerY" secondItem="1nr-t7-p0E" secondAttribute="centerY" id="h5l-oG-1pM"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txf-hz-zr5">
+                    <rect key="frame" x="110" y="0.0" width="304" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="clickPrivacyAction:" destination="-1" eventType="touchUpInside" id="vxK-Mn-560"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="449-SD-4lV">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="clickCheckBoxAction:" destination="-1" eventType="touchUpInside" id="Qgh-Rx-edS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1nr-t7-p0E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Bs-f0-ihH"/>
+                <constraint firstItem="1nr-t7-p0E" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="qAz-mT-QkM"/>
+                <constraint firstAttribute="bottom" secondItem="1nr-t7-p0E" secondAttribute="bottom" id="vU5-Rb-RiC"/>
+                <constraint firstItem="1nr-t7-p0E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="x1J-U7-2Vq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="104" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox_default_20x20" width="20.5" height="20.5"/>
+    </resources>
+</document>

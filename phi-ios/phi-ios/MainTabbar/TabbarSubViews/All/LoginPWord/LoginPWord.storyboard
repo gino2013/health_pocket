@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--登入密碼-->
+        <scene sceneID="CEF-Sn-c4g">
+            <objects>
+                <viewController storyboardIdentifier="LoginPWordViewController" id="77l-5M-IsP" customClass="LoginPWordViewController" customModule="phi_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wvt-Hf-tUS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ds-uJ-xHh" userLabel="line 0.5">
+                                <rect key="frame" x="0.0" y="92" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="BJm-40-Id8"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xvz-AT-Cw9">
+                                <rect key="frame" x="24" y="125" width="366" height="334"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3p6-BB-qB7" customClass="RgterInputView" customModule="phi_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="98"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="hint" value="舊登入密碼"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="請輸入密碼"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorNote" value="密碼有誤，須為8-12碼包含大、小寫英文字母與數字"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chA-Cp-brI" customClass="RgterInputView" customModule="phi_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="118" width="366" height="98"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="hint" value="新登入密碼"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="請輸入8-12位大小寫英文與數字"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorNote" value="密碼有誤，須為8-12碼包含大、小寫英文字母與數字"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X12-9a-zOj" customClass="RgterInputView" customModule="phi_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="236" width="366" height="98"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="hint" value="再次確認新登入密碼"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="請再次輸入新密碼"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorNote" value="密碼有誤，須為8-12碼包含大、小寫英文字母與數字"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVu-f2-CmY" userLabel="line 0.5">
+                                <rect key="frame" x="0.0" y="781.5" width="414" height="0.5"/>
+                                <color key="backgroundColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="TWq-oR-Ohr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kC1-jb-qEE">
+                                <rect key="frame" x="0.0" y="782" width="414" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hd-Jn-44p">
+                                        <rect key="frame" x="24" y="16" width="366" height="48"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="3wP-Q5-2IM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="重設密碼">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetAction:" destination="77l-5M-IsP" eventType="touchUpInside" id="kul-lF-zOm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6hd-Jn-44p" firstAttribute="leading" secondItem="kC1-jb-qEE" secondAttribute="leading" constant="24" id="PUF-tA-a0c"/>
+                                    <constraint firstAttribute="height" constant="80" id="r4O-D4-8QB"/>
+                                    <constraint firstAttribute="trailing" secondItem="6hd-Jn-44p" secondAttribute="trailing" constant="24" id="vbi-KF-14O"/>
+                                    <constraint firstItem="6hd-Jn-44p" firstAttribute="top" secondItem="kC1-jb-qEE" secondAttribute="top" constant="16" id="wTP-5S-okN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hfy-CK-aMj"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fVu-f2-CmY" firstAttribute="centerX" secondItem="Wvt-Hf-tUS" secondAttribute="centerX" id="2Wt-Gx-Iet"/>
+                            <constraint firstAttribute="trailing" secondItem="8ds-uJ-xHh" secondAttribute="trailing" id="91A-bJ-bVU"/>
+                            <constraint firstItem="hfy-CK-aMj" firstAttribute="trailing" secondItem="Xvz-AT-Cw9" secondAttribute="trailing" constant="24" id="Aee-mx-Z0A"/>
+                            <constraint firstItem="hfy-CK-aMj" firstAttribute="bottom" secondItem="kC1-jb-qEE" secondAttribute="bottom" id="Bz5-IF-irT"/>
+                            <constraint firstItem="fVu-f2-CmY" firstAttribute="width" secondItem="kC1-jb-qEE" secondAttribute="width" id="GLd-aS-OV6"/>
+                            <constraint firstItem="8ds-uJ-xHh" firstAttribute="top" secondItem="hfy-CK-aMj" secondAttribute="top" id="OWr-wI-pvh"/>
+                            <constraint firstItem="Xvz-AT-Cw9" firstAttribute="leading" secondItem="hfy-CK-aMj" secondAttribute="leading" constant="24" id="TBb-bh-QpG"/>
+                            <constraint firstItem="kC1-jb-qEE" firstAttribute="leading" secondItem="hfy-CK-aMj" secondAttribute="leading" id="Tij-QK-K2f"/>
+                            <constraint firstItem="8ds-uJ-xHh" firstAttribute="centerX" secondItem="Wvt-Hf-tUS" secondAttribute="centerX" id="UlC-dc-IHe"/>
+                            <constraint firstItem="kC1-jb-qEE" firstAttribute="top" secondItem="fVu-f2-CmY" secondAttribute="bottom" id="g5s-3t-6mR"/>
+                            <constraint firstItem="8ds-uJ-xHh" firstAttribute="leading" secondItem="Wvt-Hf-tUS" secondAttribute="leading" id="mFB-mQ-fzd"/>
+                            <constraint firstItem="Xvz-AT-Cw9" firstAttribute="top" secondItem="8ds-uJ-xHh" secondAttribute="bottom" constant="32" id="oKf-vR-H1j"/>
+                            <constraint firstItem="hfy-CK-aMj" firstAttribute="trailing" secondItem="kC1-jb-qEE" secondAttribute="trailing" id="qGu-q0-l28"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="登入密碼" id="57r-ev-toA"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="newOlaaPwInputView" destination="chA-Cp-brI" id="HH7-dB-5Jr"/>
+                        <outlet property="oldOlaaPwInputView" destination="3p6-BB-qB7" id="25h-9s-kZ1"/>
+                        <outlet property="reNewOlaaPwInputView" destination="X12-9a-zOj" id="g5N-xt-BVQ"/>
+                        <outlet property="resetButton" destination="6hd-Jn-44p" id="hvo-RZ-2S9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="025-ha-Rjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3384.8000000000002" y="-563.05418719211821"/>
+        </scene>
+    </scenes>
+</document>

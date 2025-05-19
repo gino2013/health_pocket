@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenderRadioView" customModule="phi_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="femaleButton" destination="fJP-2M-kSk" id="6s3-iq-YZf"/>
+                <outlet property="hintLabel" destination="JjQ-9b-vxU" id="tEQ-Gg-cbo"/>
+                <outlet property="maleButton" destination="tJ0-x3-xu8" id="ZOL-dy-JGo"/>
+                <outlet property="starLabel" destination="eMF-Oj-ezT" id="9j9-Ms-dAt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="aAH-oo-pYF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="709-WD-soU">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="22"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性別" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-9b-vxU">
+                                    <rect key="frame" x="0.0" y="2" width="32" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="JdC-JD-1Ps"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                                    <color key="textColor" red="0.20392156862745098" green="0.22352941176470587" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMF-Oj-ezT">
+                                    <rect key="frame" x="33" y="2" width="8.5" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="BQs-lH-eKY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                                    <color key="textColor" systemColor="systemRedColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="eMF-Oj-ezT" firstAttribute="centerY" secondItem="709-WD-soU" secondAttribute="centerY" id="65L-aq-0li"/>
+                                <constraint firstItem="JjQ-9b-vxU" firstAttribute="leading" secondItem="709-WD-soU" secondAttribute="leading" id="Ceg-yr-blP"/>
+                                <constraint firstItem="JjQ-9b-vxU" firstAttribute="centerY" secondItem="709-WD-soU" secondAttribute="centerY" id="N1c-dU-ebe"/>
+                                <constraint firstItem="eMF-Oj-ezT" firstAttribute="leading" secondItem="JjQ-9b-vxU" secondAttribute="trailing" constant="1" id="T86-xu-q3U"/>
+                                <constraint firstAttribute="height" constant="22" id="Vs7-DI-xiL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeP-uw-T3V">
+                            <rect key="frame" x="0.0" y="22" width="414" height="16"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="mdB-z2-Boq"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ti9-eu-hNk">
+                            <rect key="frame" x="0.0" y="38" width="414" height="24"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJ0-x3-xu8">
+                                    <rect key="frame" x="0.0" y="1" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="0W9-Ip-JGA"/>
+                                        <constraint firstAttribute="width" constant="20" id="tmW-ff-gEC"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="RadioBtnSelect"/>
+                                    <connections>
+                                        <action selector="clickMaleAction:" destination="-1" eventType="touchUpInside" id="LCH-Ak-jsO"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rau-5N-qIk">
+                                    <rect key="frame" x="28" y="2" width="14" height="20"/>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                                    <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJP-2M-kSk">
+                                    <rect key="frame" x="66" y="1" width="20" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="Itd-4x-Q71"/>
+                                        <constraint firstAttribute="height" constant="22" id="aTC-if-hwB"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="RadioBtnNoSelect"/>
+                                    <connections>
+                                        <action selector="clickFemaleAction:" destination="-1" eventType="touchUpInside" id="vip-OY-bMp"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD4-ti-TJa">
+                                    <rect key="frame" x="94" y="2" width="14" height="20"/>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="fJP-2M-kSk" firstAttribute="leading" secondItem="rau-5N-qIk" secondAttribute="trailing" constant="24" id="2TR-AL-9rl"/>
+                                <constraint firstItem="bD4-ti-TJa" firstAttribute="leading" secondItem="fJP-2M-kSk" secondAttribute="trailing" constant="8" id="4JU-5j-SZK"/>
+                                <constraint firstItem="rau-5N-qIk" firstAttribute="centerY" secondItem="tJ0-x3-xu8" secondAttribute="centerY" id="ZJw-G7-Vvc"/>
+                                <constraint firstAttribute="height" constant="24" id="e3g-32-MYv"/>
+                                <constraint firstItem="tJ0-x3-xu8" firstAttribute="centerY" secondItem="ti9-eu-hNk" secondAttribute="centerY" id="eIB-bN-jrE"/>
+                                <constraint firstItem="bD4-ti-TJa" firstAttribute="centerY" secondItem="fJP-2M-kSk" secondAttribute="centerY" id="eVm-LI-K6D"/>
+                                <constraint firstItem="fJP-2M-kSk" firstAttribute="centerY" secondItem="tJ0-x3-xu8" secondAttribute="centerY" id="hYe-kA-hhx"/>
+                                <constraint firstItem="rau-5N-qIk" firstAttribute="leading" secondItem="tJ0-x3-xu8" secondAttribute="trailing" constant="8" id="li6-Qh-7lE"/>
+                                <constraint firstItem="tJ0-x3-xu8" firstAttribute="leading" secondItem="ti9-eu-hNk" secondAttribute="leading" id="uTC-cs-2M8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aAH-oo-pYF" secondAttribute="trailing" id="RZq-3g-Vwf"/>
+                <constraint firstAttribute="bottom" secondItem="aAH-oo-pYF" secondAttribute="bottom" id="TLw-HW-w6k"/>
+                <constraint firstItem="aAH-oo-pYF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oru-wA-Jpb"/>
+                <constraint firstItem="aAH-oo-pYF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rHJ-6N-fhw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.13043478260872" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RadioBtnNoSelect" width="20" height="20"/>
+        <image name="RadioBtnSelect" width="20" height="20"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AuthHospitailTableViewCell" rowHeight="70" id="gdt-cQ-m1z" customClass="AuthHospitailTableViewCell" customModule="phi_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gdt-cQ-m1z" id="Jwx-fR-A69">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqn-IV-y9r">
+                        <rect key="frame" x="5" y="5" width="374" height="56"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="國泰醫院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0Z-eo-ymF">
+                                <rect key="frame" x="20" y="17" width="64" height="22.5"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBr-Fi-fCH">
+                                <rect key="frame" x="330" y="16" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Fax-Yu-qIj"/>
+                                    <constraint firstAttribute="height" constant="24" id="RBW-YV-CYh"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="next"/>
+                                <connections>
+                                    <action selector="button:" destination="gdt-cQ-m1z" eventType="touchUpInside" id="N99-4P-uNJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d0Z-eo-ymF" firstAttribute="centerY" secondItem="aqn-IV-y9r" secondAttribute="centerY" id="m9b-7a-adf"/>
+                            <constraint firstAttribute="trailing" secondItem="VBr-Fi-fCH" secondAttribute="trailing" constant="20" id="rmN-cQ-XYL"/>
+                            <constraint firstItem="d0Z-eo-ymF" firstAttribute="leading" secondItem="aqn-IV-y9r" secondAttribute="leading" constant="20" id="u2p-GQ-nct"/>
+                            <constraint firstItem="VBr-Fi-fCH" firstAttribute="centerY" secondItem="aqn-IV-y9r" secondAttribute="centerY" id="zls-dY-BHk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="aqn-IV-y9r" firstAttribute="leading" secondItem="Jwx-fR-A69" secondAttribute="leading" constant="5" id="NIz-6m-f0A"/>
+                    <constraint firstAttribute="trailing" secondItem="aqn-IV-y9r" secondAttribute="trailing" constant="5" id="kda-UX-LIE"/>
+                    <constraint firstItem="aqn-IV-y9r" firstAttribute="top" secondItem="Jwx-fR-A69" secondAttribute="top" constant="5" id="mVJ-Fr-slw"/>
+                    <constraint firstAttribute="bottom" secondItem="aqn-IV-y9r" secondAttribute="bottom" constant="9" id="tPe-ZJ-lkK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cellBaseView" destination="aqn-IV-y9r" id="h81-i9-Fgr"/>
+                <outlet property="hospitalLabel" destination="d0Z-eo-ymF" id="dZi-Ta-Uyk"/>
+                <outlet property="nextButton" destination="VBr-Fi-fCH" id="uhb-oA-LaE"/>
+            </connections>
+            <point key="canvasLocation" x="-62.399999999999999" y="-5.3973013493253381"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="next" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

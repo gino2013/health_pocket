@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--生活習慣-->
+        <scene sceneID="S9b-7h-YYK">
+            <objects>
+                <viewController id="v5h-gw-xpQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SdF-wM-nQ4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-OT-gMW" userLabel="line 0.5">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="jQA-XD-kKV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-AI-1yc">
+                                <rect key="frame" x="44" y="90" width="325" height="34"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="RcN-8V-d1b">
+                                        <rect key="frame" x="301" y="5" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="2cp-gS-t29"/>
+                                            <constraint firstAttribute="height" constant="24" id="m7W-Nt-yqU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用藥管理" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgf-JO-hp4">
+                                        <rect key="frame" x="0.0" y="2.9999999999999982" width="80" height="28.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mb-Ji-Bzr">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="34"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="3Mb-Ji-Bzr" firstAttribute="trailing" secondItem="RcN-8V-d1b" secondAttribute="trailing" id="43A-8T-87D"/>
+                                    <constraint firstItem="3Mb-Ji-Bzr" firstAttribute="leading" secondItem="Rgf-JO-hp4" secondAttribute="leading" id="558-nR-GO3"/>
+                                    <constraint firstItem="Rgf-JO-hp4" firstAttribute="centerY" secondItem="ZWS-AI-1yc" secondAttribute="centerY" id="N85-Fw-p8i"/>
+                                    <constraint firstItem="3Mb-Ji-Bzr" firstAttribute="width" secondItem="ZWS-AI-1yc" secondAttribute="width" id="PAf-ef-jme"/>
+                                    <constraint firstItem="RcN-8V-d1b" firstAttribute="centerY" secondItem="Rgf-JO-hp4" secondAttribute="centerY" id="R75-vZ-g3H"/>
+                                    <constraint firstItem="3Mb-Ji-Bzr" firstAttribute="centerY" secondItem="Rgf-JO-hp4" secondAttribute="centerY" id="ijO-Ba-2Fp"/>
+                                    <constraint firstItem="Rgf-JO-hp4" firstAttribute="leading" secondItem="ZWS-AI-1yc" secondAttribute="leading" id="io0-sh-Drt"/>
+                                    <constraint firstItem="3Mb-Ji-Bzr" firstAttribute="height" secondItem="Rgf-JO-hp4" secondAttribute="height" multiplier="1.2" id="jLa-cf-aOM"/>
+                                    <constraint firstAttribute="height" constant="34" id="uHf-sV-UMZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVh-dh-wJT">
+                                <rect key="frame" x="24" y="134" width="345" height="110"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 427320106" translatesAutoresizingMaskIntoConstraints="NO" id="Xfd-Op-tox" userLabel="center stepEmpty">
+                                        <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="bE9-gE-PcM"/>
+                                            <constraint firstAttribute="width" constant="20" id="bx7-Fh-Xaq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上週用藥狀況" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-uh-zY1">
+                                        <rect key="frame" x="48" y="17.333333333333343" width="108" height="25.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="18"/>
+                                        <color key="textColor" red="0.18039215689999999" green="0.5450980392" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您上週沒有建立任何用藥提醒，趕快進入「用藥管理」建立提醒吧！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egV-Kj-PYH">
+                                        <rect key="frame" x="20" y="46.666666666666657" width="305" height="53.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="16"/>
+                                        <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8ie-uh-zY1" firstAttribute="centerY" secondItem="Xfd-Op-tox" secondAttribute="centerY" id="ERe-C4-M4t"/>
+                                    <constraint firstItem="egV-Kj-PYH" firstAttribute="top" secondItem="8ie-uh-zY1" secondAttribute="bottom" constant="4" id="Fwu-OO-BB1"/>
+                                    <constraint firstAttribute="trailing" secondItem="egV-Kj-PYH" secondAttribute="trailing" constant="20" id="LM0-uu-ekP"/>
+                                    <constraint firstAttribute="bottom" secondItem="egV-Kj-PYH" secondAttribute="bottom" constant="10" id="Zxf-rZ-Tdx"/>
+                                    <constraint firstItem="egV-Kj-PYH" firstAttribute="leading" secondItem="Xfd-Op-tox" secondAttribute="leading" id="mqV-fn-833"/>
+                                    <constraint firstAttribute="height" constant="110" id="qdD-LX-aUY"/>
+                                    <constraint firstItem="Xfd-Op-tox" firstAttribute="top" secondItem="xVh-dh-wJT" secondAttribute="top" constant="20" id="qyr-Ea-Aes"/>
+                                    <constraint firstItem="Xfd-Op-tox" firstAttribute="leading" secondItem="xVh-dh-wJT" secondAttribute="leading" constant="20" id="r3F-zk-Hsh"/>
+                                    <constraint firstItem="8ie-uh-zY1" firstAttribute="leading" secondItem="Xfd-Op-tox" secondAttribute="trailing" constant="8" id="vtB-YK-dP4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YcQ-v8-8RZ"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Df5-OT-gMW" firstAttribute="centerX" secondItem="SdF-wM-nQ4" secondAttribute="centerX" id="CKJ-G7-agf"/>
+                            <constraint firstItem="Df5-OT-gMW" firstAttribute="width" secondItem="SdF-wM-nQ4" secondAttribute="width" id="FF5-h2-tZ4"/>
+                            <constraint firstItem="ZWS-AI-1yc" firstAttribute="leading" secondItem="YcQ-v8-8RZ" secondAttribute="leading" constant="44" id="K1b-Bm-APs"/>
+                            <constraint firstItem="Df5-OT-gMW" firstAttribute="top" secondItem="YcQ-v8-8RZ" secondAttribute="top" id="KFK-S3-a0E"/>
+                            <constraint firstItem="ZWS-AI-1yc" firstAttribute="top" secondItem="Df5-OT-gMW" secondAttribute="bottom" constant="30" id="SHp-iD-FVG"/>
+                            <constraint firstItem="xVh-dh-wJT" firstAttribute="leading" secondItem="YcQ-v8-8RZ" secondAttribute="leading" constant="24" id="U4o-FB-G4N"/>
+                            <constraint firstItem="xVh-dh-wJT" firstAttribute="top" secondItem="ZWS-AI-1yc" secondAttribute="bottom" constant="10" id="ikF-eC-mQO"/>
+                            <constraint firstItem="YcQ-v8-8RZ" firstAttribute="trailing" secondItem="ZWS-AI-1yc" secondAttribute="trailing" constant="24" id="mpP-kp-ugt"/>
+                            <constraint firstItem="YcQ-v8-8RZ" firstAttribute="trailing" secondItem="xVh-dh-wJT" secondAttribute="trailing" constant="24" id="tfw-Zs-smd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="生活習慣" id="Q7H-fZ-UPx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIM-cb-8jU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="596"/>
+        </scene>
+        <!--生活習慣-->
+        <scene sceneID="bYv-HP-ZTo">
+            <objects>
+                <navigationController storyboardIdentifier="LivingHabitNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="CMU-La-rkb" customClass="LivingHabitNavigationController" customModule="phi_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="生活習慣" image="phill_default" selectedImage="phill_active" id="kVp-bh-1O7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QjU-WN-4Mk">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bsp-Fd-PaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-108.45070422535211"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Frame 427320106" width="20.333333969116211" height="20"/>
+        <image name="next" width="24" height="24"/>
+        <image name="phill_active" width="24.333333969116211" height="24.333333969116211"/>
+        <image name="phill_default" width="24.333333969116211" height="24.333333969116211"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

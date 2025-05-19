@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemeberInfoViewController" customModule="phi_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="bMU-nz-wiS" id="oUC-V2-79c"/>
+                <outlet property="genderInputView" destination="Nvl-9S-54b" id="ouF-He-N7k"/>
+                <outlet property="idrtofItView" destination="Ysr-j5-1F6" id="vNe-BS-fe4"/>
+                <outlet property="mszrItView" destination="wHb-KS-qZh" id="uB8-Ju-xPQ"/>
+                <outlet property="notyjfsuItView" destination="Ihg-cM-qFF" id="Ire-jh-zfJ"/>
+                <outlet property="rzsoaItView" destination="ZUo-R4-rDj" id="4kV-kC-8m2"/>
+                <outlet property="saveButton" destination="5Tj-Pj-SH7" id="7Db-YW-icg"/>
+                <outlet property="svvpimyItView" destination="JwO-eo-awP" id="enB-ma-Roj"/>
+                <outlet property="view" destination="FFo-be-Oyx" id="wEz-bg-L3h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FFo-be-Oyx">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfu-Wx-xFe" userLabel="line 0.5">
+                    <rect key="frame" x="0.0" y="49" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dAE-H7-YuK"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahh-qs-2IV">
+                    <rect key="frame" x="0.0" y="50" width="414" height="732"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qTh-Ia-vzx">
+                            <rect key="frame" x="24" y="30" width="366" height="688"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JwO-eo-awP" customClass="RgterInputView" customModule="phi_ios" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="98"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="hint" value="帳號(手機號碼)"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="請輸入手機號碼"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="errorNote" value="手機號碼輸入有誤"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHb-KS-qZh" customClass="RgterInputView" customModule="phi_ios" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="118" width="366" height="98"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="hint" value="真實姓名"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="請輸入真實姓名"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="errorNote" value="真實姓名輸入有誤"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysr-j5-1F6" customClass="RgterInputView" customModule="phi_ios" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="236" width="366" height="98"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="hint" value="身分證字號"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="請輸入身分證字號"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="errorNote" value="身分證字號輸入有誤"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihg-cM-qFF" customClass="RgterInputView" customModule="phi_ios" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="354" width="366" height="98"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="hint" value="出生日期"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="請輸入西元/月份/日"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="errorNote" value="出生日期輸入有誤"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nvl-9S-54b" customClass="RgterInputView" customModule="phi_ios" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="472" width="366" height="98"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="hint" value="性別"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="請輸入性別"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="errorNote" value="性別輸入有誤"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUo-R4-rDj" customClass="RgterInputView" customModule="phi_ios" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="590" width="366" height="98"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="hint" value="電子信箱"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="請輸入電子信箱"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="errorNote" value="電子信箱輸入有誤"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="qTh-Ia-vzx" firstAttribute="top" secondItem="S5Q-WP-GNG" secondAttribute="top" constant="30" id="8IB-CG-kAz"/>
+                        <constraint firstItem="qTh-Ia-vzx" firstAttribute="bottom" secondItem="S5Q-WP-GNG" secondAttribute="bottom" constant="20" id="e4J-Cy-0kp"/>
+                        <constraint firstItem="qTh-Ia-vzx" firstAttribute="trailing" secondItem="S5Q-WP-GNG" secondAttribute="trailing" constant="24" id="hBV-VD-ypd"/>
+                        <constraint firstItem="qTh-Ia-vzx" firstAttribute="leading" secondItem="S5Q-WP-GNG" secondAttribute="leading" constant="24" id="wmF-ps-kPK"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="S5Q-WP-GNG"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Bdp-me-7P4"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opd-70-DsL" userLabel="line 0.5">
+                    <rect key="frame" x="0.0" y="781.5" width="414" height="0.5"/>
+                    <color key="backgroundColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Eta-un-4cW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXB-pD-fq8">
+                    <rect key="frame" x="0.0" y="782" width="414" height="80"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Lsh-mm-553">
+                            <rect key="frame" x="24" y="16" width="366" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMU-nz-wiS">
+                                    <rect key="frame" x="0.0" y="0.0" width="175" height="48"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="取消">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="wSE-11-5YM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Tj-Pj-SH7">
+                                    <rect key="frame" x="191" y="0.0" width="175" height="48"/>
+                                    <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="儲存">
+                                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="62a-Kv-F6U"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Lsh-mm-553" secondAttribute="bottom" constant="16" id="3a7-S2-F3J"/>
+                        <constraint firstAttribute="trailing" secondItem="Lsh-mm-553" secondAttribute="trailing" constant="24" id="9dY-dH-9eG"/>
+                        <constraint firstItem="Lsh-mm-553" firstAttribute="leading" secondItem="lXB-pD-fq8" secondAttribute="leading" constant="24" id="Vsf-Dx-Kot"/>
+                        <constraint firstItem="Lsh-mm-553" firstAttribute="top" secondItem="lXB-pD-fq8" secondAttribute="top" constant="16" id="obt-hU-clV"/>
+                        <constraint firstAttribute="height" constant="80" id="zlv-I7-vmV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rwb-yw-nhj"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xfu-Wx-xFe" firstAttribute="width" secondItem="Ahh-qs-2IV" secondAttribute="width" id="1sI-kg-ZKs"/>
+                <constraint firstItem="rwb-yw-nhj" firstAttribute="trailing" secondItem="lXB-pD-fq8" secondAttribute="trailing" id="7bM-yp-iTa"/>
+                <constraint firstItem="lXB-pD-fq8" firstAttribute="leading" secondItem="rwb-yw-nhj" secondAttribute="leading" id="LG4-1f-KRs"/>
+                <constraint firstItem="xfu-Wx-xFe" firstAttribute="top" secondItem="rwb-yw-nhj" secondAttribute="top" constant="1" id="Mzj-O8-T9g"/>
+                <constraint firstItem="lXB-pD-fq8" firstAttribute="top" secondItem="Ahh-qs-2IV" secondAttribute="bottom" id="Rfb-89-M7n"/>
+                <constraint firstItem="lXB-pD-fq8" firstAttribute="bottom" secondItem="rwb-yw-nhj" secondAttribute="bottom" id="SBN-gi-clj"/>
+                <constraint firstItem="Ahh-qs-2IV" firstAttribute="leading" secondItem="FFo-be-Oyx" secondAttribute="leading" id="TQf-jD-jRy"/>
+                <constraint firstAttribute="trailing" secondItem="Ahh-qs-2IV" secondAttribute="trailing" id="b53-SJ-3bc"/>
+                <constraint firstItem="xfu-Wx-xFe" firstAttribute="centerX" secondItem="FFo-be-Oyx" secondAttribute="centerX" id="h0o-Vs-Z8w"/>
+                <constraint firstItem="Opd-70-DsL" firstAttribute="width" secondItem="lXB-pD-fq8" secondAttribute="width" id="or2-xG-UB5"/>
+                <constraint firstItem="qTh-Ia-vzx" firstAttribute="centerX" secondItem="rwb-yw-nhj" secondAttribute="centerX" id="sNP-kg-e1m"/>
+                <constraint firstItem="Ahh-qs-2IV" firstAttribute="top" secondItem="xfu-Wx-xFe" secondAttribute="bottom" id="tuf-14-LDl"/>
+                <constraint firstItem="Opd-70-DsL" firstAttribute="centerX" secondItem="FFo-be-Oyx" secondAttribute="centerX" id="urD-Sr-oMm"/>
+                <constraint firstItem="lXB-pD-fq8" firstAttribute="top" secondItem="Opd-70-DsL" secondAttribute="bottom" id="y4v-4d-bNg"/>
+            </constraints>
+            <point key="canvasLocation" x="-3192.753623188406" y="102.45535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

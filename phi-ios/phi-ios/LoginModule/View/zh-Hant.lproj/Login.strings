@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Face ID 登入"; ObjectID = "DjF-CX-ecW"; */
+"DjF-CX-ecW.text" = "Face ID 登入";
+
+/* Class = "UILabel"; text = "登入PHI"; ObjectID = "Jtg-4m-5cU"; */
+"Jtg-4m-5cU.text" = "登入PHI";
+
+/* Class = "UILabel"; text = "還沒有帳號嗎？"; ObjectID = "ljJ-h6-vCa"; */
+"ljJ-h6-vCa.text" = "還沒有帳號嗎？";
+
+/* Class = "UILabel"; text = "立即註冊"; ObjectID = "qIb-Xe-wJ6"; */
+"qIb-Xe-wJ6.text" = "立即註冊";
+
+/* Class = "UIButton"; normalTitle = "登入"; ObjectID = "tEK-KK-6LA"; */
+"tEK-KK-6LA.normalTitle" = "登入";

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--用藥管理-->
+        <scene sceneID="cqM-gV-ZDA">
+            <objects>
+                <viewController storyboardIdentifier="MedicationManagementVC" id="kQu-VA-VgZ" customClass="MedicationManagementVC" customModule="phi_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9PS-nl-PlZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qd-b4-SQc" userLabel="line 0.5">
+                                <rect key="frame" x="0.0" y="60" width="393" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8LL-k5-OBu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9s-xw-i9v" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="25" width="393" height="300"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="A0U-zg-LN4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fakedSelectedDay">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kQu-VA-VgZ" id="K3x-nL-c8i"/>
+                                    <outlet property="delegate" destination="kQu-VA-VgZ" id="72w-FF-N5r"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-xV-3ds">
+                                <rect key="frame" x="0.0" y="325" width="393" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mf-1j-Nwi">
+                                        <rect key="frame" x="24" y="20" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                                        <color key="textColor" red="0.20392156862745098" green="0.22352941176470587" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QN-Hb-rQR">
+                                        <rect key="frame" x="196.66666666666666" y="20" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                                        <color key="textColor" red="0.1803921568627451" green="0.54509803921568623" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKI-d4-HB1">
+                                        <rect key="frame" x="319" y="8" width="50" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="ktf-FV-i0H"/>
+                                            <constraint firstAttribute="width" constant="50" id="mZG-3X-4Sp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="今日">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickTodayAction:" destination="kQu-VA-VgZ" eventType="touchUpInside" id="pLS-lp-b3c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="2QN-Hb-rQR" firstAttribute="centerY" secondItem="Jgs-xV-3ds" secondAttribute="centerY" id="7x0-9Y-rfW"/>
+                                    <constraint firstItem="9Mf-1j-Nwi" firstAttribute="leading" secondItem="Jgs-xV-3ds" secondAttribute="leading" constant="24" id="E6K-Kt-gol"/>
+                                    <constraint firstItem="nKI-d4-HB1" firstAttribute="centerY" secondItem="Jgs-xV-3ds" secondAttribute="centerY" id="WZG-Wm-fjU"/>
+                                    <constraint firstAttribute="trailing" secondItem="nKI-d4-HB1" secondAttribute="trailing" constant="24" id="jAt-yG-IqB"/>
+                                    <constraint firstItem="9Mf-1j-Nwi" firstAttribute="centerY" secondItem="Jgs-xV-3ds" secondAttribute="centerY" id="kSw-C4-VNK"/>
+                                    <constraint firstItem="2QN-Hb-rQR" firstAttribute="centerX" secondItem="Jgs-xV-3ds" secondAttribute="centerX" id="sG9-i2-QGA"/>
+                                    <constraint firstAttribute="height" constant="40" id="sgi-Ut-xtk"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vWk-SO-f0X">
+                                <rect key="frame" x="22" y="367" width="349" height="451"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目前無服用藥物紀錄，請先「新增藥物」" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eno-4C-fmA">
+                                <rect key="frame" x="12" y="582.66666666666663" width="369" height="19.666666666666629"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc_1" translatesAutoresizingMaskIntoConstraints="NO" id="VpS-Ed-85U">
+                                <rect key="frame" x="121.66666666666669" y="416.66666666666669" width="150" height="150.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="6nP-Q0-3kx"/>
+                                    <constraint firstAttribute="height" constant="150" id="v1S-SM-zD5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWc-FL-TIF">
+                                <rect key="frame" x="136.66666666666666" y="618.33333333333337" width="119.99999999999997" height="46"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gWc-FL-TIF" secondAttribute="height" multiplier="120:46" id="2Xi-rB-9wT"/>
+                                    <constraint firstAttribute="height" constant="46" id="k6p-mg-yuX"/>
+                                    <constraint firstAttribute="width" secondItem="gWc-FL-TIF" secondAttribute="height" multiplier="120:46" id="why-iw-CaO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="新增藥物">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addMedicineAction:" destination="kQu-VA-VgZ" eventType="touchUpInside" id="pvt-ee-8iv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xXl-UU-XWQ"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gWc-FL-TIF" firstAttribute="top" secondItem="Eno-4C-fmA" secondAttribute="bottom" constant="16" id="067-9k-rUr"/>
+                            <constraint firstItem="Eno-4C-fmA" firstAttribute="leading" secondItem="xXl-UU-XWQ" secondAttribute="leading" constant="12" id="2Kh-Np-HyY"/>
+                            <constraint firstItem="Eno-4C-fmA" firstAttribute="centerX" secondItem="9PS-nl-PlZ" secondAttribute="centerX" id="4mv-pX-pCp"/>
+                            <constraint firstItem="vWk-SO-f0X" firstAttribute="top" secondItem="Jgs-xV-3ds" secondAttribute="bottom" constant="2" id="55b-Zr-Y5S"/>
+                            <constraint firstItem="vWk-SO-f0X" firstAttribute="leading" secondItem="xXl-UU-XWQ" secondAttribute="leading" constant="22" id="76T-gW-yPd"/>
+                            <constraint firstItem="2qd-b4-SQc" firstAttribute="width" secondItem="9PS-nl-PlZ" secondAttribute="width" id="C0B-20-MXb"/>
+                            <constraint firstItem="VpS-Ed-85U" firstAttribute="centerX" secondItem="vWk-SO-f0X" secondAttribute="centerX" id="HME-3y-5l6"/>
+                            <constraint firstItem="m9s-xw-i9v" firstAttribute="leading" secondItem="xXl-UU-XWQ" secondAttribute="leading" id="IKk-qr-xyw"/>
+                            <constraint firstItem="xXl-UU-XWQ" firstAttribute="trailing" secondItem="m9s-xw-i9v" secondAttribute="trailing" id="aBb-fH-aVE"/>
+                            <constraint firstItem="m9s-xw-i9v" firstAttribute="top" secondItem="2qd-b4-SQc" secondAttribute="bottom" constant="-36" id="axq-kh-Awu"/>
+                            <constraint firstItem="xXl-UU-XWQ" firstAttribute="trailing" secondItem="vWk-SO-f0X" secondAttribute="trailing" constant="22" id="bq5-Lc-U8q"/>
+                            <constraint firstItem="2qd-b4-SQc" firstAttribute="top" secondItem="xXl-UU-XWQ" secondAttribute="top" constant="1" id="d9r-ni-832"/>
+                            <constraint firstItem="Jgs-xV-3ds" firstAttribute="top" secondItem="m9s-xw-i9v" secondAttribute="bottom" id="fLw-80-4TN"/>
+                            <constraint firstItem="gWc-FL-TIF" firstAttribute="centerX" secondItem="9PS-nl-PlZ" secondAttribute="centerX" id="hj8-eH-6E1"/>
+                            <constraint firstItem="xXl-UU-XWQ" firstAttribute="trailing" secondItem="Jgs-xV-3ds" secondAttribute="trailing" id="ikB-Tk-3q7"/>
+                            <constraint firstItem="Jgs-xV-3ds" firstAttribute="leading" secondItem="xXl-UU-XWQ" secondAttribute="leading" id="pFf-O6-RPF"/>
+                            <constraint firstItem="Eno-4C-fmA" firstAttribute="centerY" secondItem="vWk-SO-f0X" secondAttribute="centerY" id="smh-CT-5RE"/>
+                            <constraint firstItem="xXl-UU-XWQ" firstAttribute="bottom" secondItem="vWk-SO-f0X" secondAttribute="bottom" id="tgv-vw-uZC"/>
+                            <constraint firstItem="2qd-b4-SQc" firstAttribute="centerX" secondItem="9PS-nl-PlZ" secondAttribute="centerX" id="uxm-7p-Pc5"/>
+                            <constraint firstItem="Eno-4C-fmA" firstAttribute="top" secondItem="VpS-Ed-85U" secondAttribute="bottom" constant="16" id="va2-N3-gMl"/>
+                            <constraint firstItem="xXl-UU-XWQ" firstAttribute="trailing" secondItem="Eno-4C-fmA" secondAttribute="trailing" constant="12" id="vso-9g-VGR"/>
+                            <constraint firstItem="Eno-4C-fmA" firstAttribute="centerX" secondItem="vWk-SO-f0X" secondAttribute="centerX" id="yJE-MF-MIG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="用藥管理" id="rks-3b-J7m"/>
+                    <connections>
+                        <outlet property="AddMedicineButton" destination="gWc-FL-TIF" id="QSl-2l-C9c"/>
+                        <outlet property="calendar" destination="m9s-xw-i9v" id="Xxc-sW-l1V"/>
+                        <outlet property="calendarHeightConstraint" destination="A0U-zg-LN4" id="fxR-CJ-AqF"/>
+                        <outlet property="currentSelectLabel" destination="2QN-Hb-rQR" id="niq-Cr-wZM"/>
+                        <outlet property="emptyImageView" destination="VpS-Ed-85U" id="hgW-Ee-72S"/>
+                        <outlet property="noteLabel" destination="Eno-4C-fmA" id="I02-7X-V39"/>
+                        <outlet property="tblView" destination="vWk-SO-f0X" id="pRa-Iu-zOc"/>
+                        <outlet property="todayButton" destination="nKI-d4-HB1" id="ujj-p6-lCG"/>
+                        <outlet property="todayView" destination="Jgs-xV-3ds" id="Vdq-XQ-6ZM"/>
+                        <outlet property="yearLabel" destination="9Mf-1j-Nwi" id="QI2-0d-TYY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3R-6k-szU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3858.7786259541981" y="-108.45070422535211"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc_1" width="150.33332824707031" height="150.33332824707031"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

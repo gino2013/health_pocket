@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MedItemTextFieldView" customModule="phi_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="bView" destination="RWc-FR-ifz" id="27M-Gw-AkO"/>
+                <outlet property="itemLabel" destination="JjQ-9b-vxU" id="MLj-Ki-1y6"/>
+                <outlet property="lineView" destination="zeL-Xk-r7H" id="c2T-S9-aNh"/>
+                <outlet property="medInfoTextField" destination="f1X-xx-wub" id="DAJ-FI-shm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWc-FR-ifz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="藥品名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-9b-vxU">
+                            <rect key="frame" x="20" y="17" width="64" height="22.5"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                            <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="輸入藥品別名" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1X-xx-wub">
+                            <rect key="frame" x="207" y="11" width="187" height="34"/>
+                            <color key="textColor" red="0.1803921568627451" green="0.54509803921568623" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeL-Xk-r7H" userLabel="line">
+                            <rect key="frame" x="25.5" y="54.5" width="363" height="1"/>
+                            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Lgw-vW-Ar9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="zeL-Xk-r7H" firstAttribute="centerX" secondItem="RWc-FR-ifz" secondAttribute="centerX" id="24K-kX-WNq"/>
+                        <constraint firstItem="JjQ-9b-vxU" firstAttribute="leading" secondItem="RWc-FR-ifz" secondAttribute="leading" constant="20" id="Jxh-zr-dWK"/>
+                        <constraint firstItem="f1X-xx-wub" firstAttribute="leading" secondItem="RWc-FR-ifz" secondAttribute="centerX" id="QQW-pd-5dZ"/>
+                        <constraint firstAttribute="trailing" secondItem="f1X-xx-wub" secondAttribute="trailing" constant="20" id="RLy-EA-A9m"/>
+                        <constraint firstItem="f1X-xx-wub" firstAttribute="centerY" secondItem="RWc-FR-ifz" secondAttribute="centerY" id="Wsb-Ry-Nof"/>
+                        <constraint firstAttribute="height" constant="56" id="YHN-k2-hom"/>
+                        <constraint firstItem="zeL-Xk-r7H" firstAttribute="width" secondItem="RWc-FR-ifz" secondAttribute="width" multiplier="287:327" id="pbQ-Ba-pFJ"/>
+                        <constraint firstAttribute="bottom" secondItem="zeL-Xk-r7H" secondAttribute="bottom" constant="0.5" id="tUf-zG-4JK"/>
+                        <constraint firstItem="JjQ-9b-vxU" firstAttribute="centerY" secondItem="RWc-FR-ifz" secondAttribute="centerY" id="tvx-wO-Mea"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RWc-FR-ifz" secondAttribute="trailing" id="Ujo-Hj-ld2"/>
+                <constraint firstItem="RWc-FR-ifz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oWS-gQ-g9x"/>
+                <constraint firstItem="RWc-FR-ifz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rVU-HP-d09"/>
+                <constraint firstAttribute="bottom" secondItem="RWc-FR-ifz" secondAttribute="bottom" id="uBj-bL-fPT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.13043478260872" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

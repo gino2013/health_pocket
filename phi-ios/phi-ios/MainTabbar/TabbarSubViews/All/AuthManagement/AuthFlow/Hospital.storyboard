@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--新增授權-->
+        <scene sceneID="cqM-gV-ZDA">
+            <objects>
+                <viewController storyboardIdentifier="HospitalListViewController" id="kQu-VA-VgZ" customClass="HospitalListViewController" customModule="phi_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9PS-nl-PlZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qd-b4-SQc" userLabel="line 0.5">
+                                <rect key="frame" x="0.0" y="60" width="393" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8LL-k5-OBu"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vWk-SO-f0X">
+                                <rect key="frame" x="22" y="93" width="349" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data_1" translatesAutoresizingMaskIntoConstraints="NO" id="txk-rV-gmF">
+                                <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="txk-rV-gmF" secondAttribute="height" multiplier="1:1" id="f6P-f4-kwd"/>
+                                    <constraint firstAttribute="height" constant="150" id="m8K-nW-Pfu"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eno-4C-fmA">
+                                <rect key="frame" x="96.666666666666686" y="519" width="200" height="39.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VVz-tR-rzk"/>
+                                </constraints>
+                                <string key="text">很抱歉!
+目前沒有可授權的醫院</string>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xXl-UU-XWQ"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eno-4C-fmA" firstAttribute="centerX" secondItem="9PS-nl-PlZ" secondAttribute="centerX" id="4mv-pX-pCp"/>
+                            <constraint firstItem="vWk-SO-f0X" firstAttribute="leading" secondItem="xXl-UU-XWQ" secondAttribute="leading" constant="22" id="76T-gW-yPd"/>
+                            <constraint firstItem="2qd-b4-SQc" firstAttribute="width" secondItem="9PS-nl-PlZ" secondAttribute="width" id="C0B-20-MXb"/>
+                            <constraint firstItem="txk-rV-gmF" firstAttribute="centerY" secondItem="9PS-nl-PlZ" secondAttribute="centerY" id="DEU-SH-I3r"/>
+                            <constraint firstItem="xXl-UU-XWQ" firstAttribute="trailing" secondItem="vWk-SO-f0X" secondAttribute="trailing" constant="22" id="bq5-Lc-U8q"/>
+                            <constraint firstItem="2qd-b4-SQc" firstAttribute="top" secondItem="xXl-UU-XWQ" secondAttribute="top" constant="1" id="d9r-ni-832"/>
+                            <constraint firstItem="Eno-4C-fmA" firstAttribute="top" secondItem="txk-rV-gmF" secondAttribute="bottom" constant="18" id="iqX-0u-IPg"/>
+                            <constraint firstItem="vWk-SO-f0X" firstAttribute="top" secondItem="2qd-b4-SQc" secondAttribute="bottom" constant="32" id="luG-qX-Qyv"/>
+                            <constraint firstItem="txk-rV-gmF" firstAttribute="centerX" secondItem="9PS-nl-PlZ" secondAttribute="centerX" id="nVA-Y5-l9Y"/>
+                            <constraint firstItem="xXl-UU-XWQ" firstAttribute="bottom" secondItem="vWk-SO-f0X" secondAttribute="bottom" id="tgv-vw-uZC"/>
+                            <constraint firstItem="2qd-b4-SQc" firstAttribute="centerX" secondItem="9PS-nl-PlZ" secondAttribute="centerX" id="uxm-7p-Pc5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="新增授權" id="rks-3b-J7m"/>
+                    <connections>
+                        <outlet property="emptyImageView" destination="txk-rV-gmF" id="bpo-X1-uPD"/>
+                        <outlet property="noteLabel" destination="Eno-4C-fmA" id="I02-7X-V39"/>
+                        <outlet property="tblView" destination="vWk-SO-f0X" id="pRa-Iu-zOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3R-6k-szU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3858.7786259541981" y="-108.45070422535211"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Data_1" width="150" height="150.33332824707031"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

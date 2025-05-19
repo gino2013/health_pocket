@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  phi-ios
+
+  Created by Kenneth Wu on 2024/10/14.
+  
+*/
+
+//"CFBundleDisplayName" = "phi繁中版";
+"CFBundleDisplayName" = "phi-ios";
